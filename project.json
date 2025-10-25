@@ -2,7 +2,7 @@
   "id": "1",
   "name": "E-commerce Landing",
   "description": "Modern e-commerce landing page",
-  "lastModified": "2025-10-25T16:00:20.407Z",
+  "lastModified": "2025-10-25T16:17:28.321Z",
   "components": [],
   "pages": [
     {
@@ -60,7 +60,7 @@
           "styles": {},
           "position": {
             "x": 50,
-            "y": 120
+            "y": 110
           },
           "size": {
             "width": 200,
@@ -100,7 +100,9 @@
   "github": {
     "owner": "ilsur1103",
     "repo": "my-project",
-    "defaultBranch": "main"
+    "defaultBranch": "main",
+    "activeBranch": "main",
+    "lastSync": "2025-10-25T16:17:12.290Z"
   },
   "currentPageId": "page-1761407980108"
 }
