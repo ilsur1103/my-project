@@ -1,6 +1,9 @@
+import { useState } from 'react';
 import Custom17614079904442 from '../components/Custom17614079904442';
 
 export default function Home() {
+  const [variable1, setVariable1] = useState("765");
+
   return (
     <div
       id="page-1761407980108"
@@ -15,9 +18,11 @@ export default function Home() {
       <input
         type="text"
         placeholder="Enter text..."
+        value={variable1}
+        onChange={(e) => setVariable1(e.target.value)}
         style={{"position":"absolute","left":"50px","top":"50px","width":"200px","height":"40px"}}
       />
-      <Custom17614079904442 />
+      <Custom17614079904442 text={variable1} title="Custom Component" count={0} isActive={false} />
     </div>
   );
 }
