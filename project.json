@@ -2,11 +2,11 @@
   "id": "1",
   "name": "E-commerce Landing",
   "description": "Modern e-commerce landing page",
-  "lastModified": "2025-10-25T15:37:27.173Z",
+  "lastModified": "2025-10-25T16:00:20.407Z",
   "components": [],
   "pages": [
     {
-      "id": "page-1761406417588",
+      "id": "page-1761407980108",
       "name": "Home",
       "position": {
         "x": 100,
@@ -18,27 +18,9 @@
       },
       "components": [
         {
-          "id": "comp-1761406617632",
-          "type": "text",
-          "name": "text 1",
-          "props": {
-            "text": "Text"
-          },
-          "styles": {},
-          "position": {
-            "x": 50,
-            "y": 50
-          },
-          "size": {
-            "width": 200,
-            "height": "auto"
-          },
-          "positionType": "absolute"
-        },
-        {
-          "id": "comp-1761406618250",
+          "id": "comp-1761407986406",
           "type": "input",
-          "name": "input 2",
+          "name": "input 1",
           "props": {
             "placeholder": "Enter text...",
             "type": "text",
@@ -49,7 +31,7 @@
           "styles": {},
           "position": {
             "x": 50,
-            "y": 90
+            "y": 50
           },
           "size": {
             "width": 200,
@@ -60,15 +42,15 @@
             "desktop": {
               "value": {
                 "__type": "variable",
-                "variableId": "var-1761406634586"
+                "variableId": "var-1761407998706"
               }
             }
           }
         },
         {
-          "id": "comp-1761406627787",
-          "type": "custom-1761406624950",
-          "name": "custom-1761406624950 3",
+          "id": "comp-1761407992563",
+          "type": "custom-1761407990444",
+          "name": "custom-1761407990444 2",
           "props": {
             "text": "Hello",
             "title": "Custom Component",
@@ -78,7 +60,7 @@
           "styles": {},
           "position": {
             "x": 50,
-            "y": 150
+            "y": 120
           },
           "size": {
             "width": 200,
@@ -90,7 +72,7 @@
             "desktop": {
               "text": {
                 "__type": "variable",
-                "variableId": "var-1761406634586"
+                "variableId": "var-1761407998706"
               }
             }
           }
@@ -109,10 +91,10 @@
   },
   "variables": [
     {
-      "id": "var-1761406634586",
+      "id": "var-1761407998706",
       "name": "variable1",
       "type": "string",
-      "value": ""
+      "value": "765"
     }
   ],
   "github": {
@@ -120,5 +102,5 @@
     "repo": "my-project",
     "defaultBranch": "main"
   },
-  "currentPageId": "page-1761406417588"
+  "currentPageId": "page-1761407980108"
 }
