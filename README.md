@@ -1,1 +1,3 @@
 # my-project
+
+Repository initialized.
