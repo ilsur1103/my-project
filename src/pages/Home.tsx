@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Input } from '../components/ui/input';
 import Custom17614079904442 from '../components/Custom17614079904442';
 
 export default function Home() {
@@ -15,7 +16,7 @@ export default function Home() {
         margin: '0 auto'
       }}
     >
-      <input
+      <Input
         type="text"
         placeholder="Enter text..."
         value={variable1}
