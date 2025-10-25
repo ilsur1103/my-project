@@ -2,7 +2,7 @@
   "id": "1",
   "name": "E-commerce Landing",
   "description": "Modern e-commerce landing page",
-  "lastModified": "2025-10-25T15:33:37.588Z",
+  "lastModified": "2025-10-25T15:37:27.173Z",
   "components": [],
   "pages": [
     {
@@ -18,29 +18,82 @@
       },
       "components": [
         {
-          "id": "container-1761406417588",
-          "type": "div",
-          "name": "Main Container",
-          "children": [],
+          "id": "comp-1761406617632",
+          "type": "text",
+          "name": "text 1",
           "props": {
-            "className": "min-h-screen"
+            "text": "Text"
           },
-          "styles": {
-            "display": "flex",
-            "flexDirection": "column",
-            "width": "100%",
-            "minHeight": "100vh"
-          },
+          "styles": {},
           "position": {
-            "x": 0,
-            "y": 0
+            "x": 50,
+            "y": 50
           },
           "size": {
-            "width": "100%",
+            "width": 200,
             "height": "auto"
           },
-          "positionType": "relative",
-          "layout": "flex"
+          "positionType": "absolute"
+        },
+        {
+          "id": "comp-1761406618250",
+          "type": "input",
+          "name": "input 2",
+          "props": {
+            "placeholder": "Enter text...",
+            "type": "text",
+            "value": "",
+            "onInput": "",
+            "onChange": ""
+          },
+          "styles": {},
+          "position": {
+            "x": 50,
+            "y": 90
+          },
+          "size": {
+            "width": 200,
+            "height": 40
+          },
+          "positionType": "absolute",
+          "responsiveProps": {
+            "desktop": {
+              "value": {
+                "__type": "variable",
+                "variableId": "var-1761406634586"
+              }
+            }
+          }
+        },
+        {
+          "id": "comp-1761406627787",
+          "type": "custom-1761406624950",
+          "name": "custom-1761406624950 3",
+          "props": {
+            "text": "Hello",
+            "title": "Custom Component",
+            "count": 0,
+            "isActive": false
+          },
+          "styles": {},
+          "position": {
+            "x": 50,
+            "y": 150
+          },
+          "size": {
+            "width": 200,
+            "height": 100
+          },
+          "positionType": "absolute",
+          "customComponentCode": "import React from 'react';\n\ninterface CustomComponentProps {\n  // Define your props here (these will appear in the Property Panel)\n  text?: string;\n  title?: string;\n  count?: number;\n  isActive?: boolean;\n  className?: string;\n}\n\nexport default function CustomComponent({ \n  text = 'Hello', \n  title = 'Custom Component',\n  count = 0,\n  isActive = false,\n  className \n}: CustomComponentProps) {\n  return (\n    <div className={className}>\n      <h3>{title}</h3>\n      <p>{text}</p>\n      <p>Count: {count}</p>\n      <p>Active: {isActive ? 'Yes' : 'No'}</p>\n    </div>\n  );\n}\n",
+          "responsiveProps": {
+            "desktop": {
+              "text": {
+                "__type": "variable",
+                "variableId": "var-1761406634586"
+              }
+            }
+          }
         }
       ],
       "breakpoint": "desktop",
@@ -54,7 +107,14 @@
     "gridSize": 10,
     "snapToObjects": true
   },
-  "variables": [],
+  "variables": [
+    {
+      "id": "var-1761406634586",
+      "name": "variable1",
+      "type": "string",
+      "value": ""
+    }
+  ],
   "github": {
     "owner": "ilsur1103",
     "repo": "my-project",

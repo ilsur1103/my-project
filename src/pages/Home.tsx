@@ -1,3 +1,5 @@
+import custom17614066249503 from '../components/custom17614066249503';
+
 export default function Home() {
   return (
     <div
@@ -10,8 +12,15 @@ export default function Home() {
         margin: '0 auto'
       }}
     >
-      <div style={{"position":"relative","left":"0px","top":"0px","width":"100%","height":"auto","display":"flex","flexDirection":"column","minHeight":"100vh"}}>
+      <div style={{"position":"absolute","left":"50px","top":"50px","width":"200px","height":"auto"}}>
+        Text
       </div>
+      <input
+        type="text"
+        placeholder="Enter text..."
+        style={{"position":"absolute","left":"50px","top":"90px","width":"200px","height":"40px"}}
+      />
+      <custom17614066249503 />
     </div>
   );
 }
