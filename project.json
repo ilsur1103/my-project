@@ -2,7 +2,7 @@
   "id": "1",
   "name": "E-commerce Landing",
   "description": "Modern e-commerce landing page",
-  "lastModified": "2025-10-26T16:00:06.144Z",
+  "lastModified": "2025-10-26T16:08:18.295Z",
   "components": [],
   "pages": [
     {
@@ -99,6 +99,34 @@
           "actionHandlers": {
             "onClick": "action-1761489045913"
           }
+        },
+        {
+          "id": "comp-1761494794693",
+          "type": "button",
+          "name": "button 4",
+          "props": {
+            "text": "Button",
+            "variant": "default",
+            "disabled": false
+          },
+          "styles": {},
+          "position": {
+            "x": 184,
+            "y": 190
+          },
+          "size": {
+            "width": 144,
+            "height": 40
+          },
+          "positionType": "relative",
+          "responsiveProps": {
+            "desktop": {
+              "text": "Open in modal"
+            }
+          },
+          "actionHandlers": {
+            "onClick": "action-1761494359797"
+          }
         }
       ],
       "breakpoint": "desktop",
@@ -173,7 +201,7 @@
   ],
   "canvasSettings": {
     "showGrid": false,
-    "snapToGrid": true,
+    "snapToGrid": false,
     "gridSize": 10,
     "snapToObjects": true
   },
@@ -190,7 +218,7 @@
     "repo": "my-project",
     "defaultBranch": "main",
     "activeBranch": "main",
-    "lastSync": "2025-10-26T15:57:03.679Z"
+    "lastSync": "2025-10-26T16:06:21.059Z"
   },
   "currentPageId": "page-1761407980108"
 }

@@ -31,6 +31,9 @@ export default function Home() {
       <Button onClick={() => navigate('/page2')} style={{"position":"relative","left":"50px","top":"230px","width":"120px","height":"40px"}}>
         Button
       </Button>
+      <Button onClick={() => setModalState({ isOpen: true, pageId: 'page-1761489007826', title: '', closable: true })} style={{"position":"relative","left":"184px","top":"190px","width":"144px","height":"40px"}}>
+        Open in modal
+      </Button>
     </div>
   );
 }
