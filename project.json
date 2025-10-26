@@ -2,7 +2,7 @@
   "id": "1",
   "name": "E-commerce Landing",
   "description": "Modern e-commerce landing page",
-  "lastModified": "2025-10-26T15:46:03.901Z",
+  "lastModified": "2025-10-26T16:00:06.144Z",
   "components": [],
   "pages": [
     {
@@ -161,6 +161,14 @@
         "pageId": "page-1761489007826"
       },
       "id": "action-1761489045913"
+    },
+    {
+      "name": "Action 2",
+      "type": "openModal",
+      "params": {
+        "pageId": "page-1761489007826"
+      },
+      "id": "action-1761494359797"
     }
   ],
   "canvasSettings": {
@@ -182,7 +190,7 @@
     "repo": "my-project",
     "defaultBranch": "main",
     "activeBranch": "main",
-    "lastSync": "2025-10-26T15:45:41.514Z"
+    "lastSync": "2025-10-26T15:57:03.679Z"
   },
   "currentPageId": "page-1761407980108"
 }
