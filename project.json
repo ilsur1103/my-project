@@ -2,7 +2,7 @@
   "id": "1",
   "name": "E-commerce Landing",
   "description": "Modern e-commerce landing page",
-  "lastModified": "2025-10-25T17:42:53.989Z",
+  "lastModified": "2025-10-26T14:32:19.585Z",
   "components": [],
   "pages": [
     {
@@ -76,13 +76,90 @@
               }
             }
           }
+        },
+        {
+          "id": "comp-1761489039777",
+          "type": "button",
+          "name": "button 3",
+          "props": {
+            "text": "Button",
+            "variant": "default",
+            "disabled": false
+          },
+          "styles": {},
+          "position": {
+            "x": 50,
+            "y": 230
+          },
+          "size": {
+            "width": 120,
+            "height": 40
+          },
+          "positionType": "relative"
         }
       ],
       "breakpoint": "desktop",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#ffffff",
+      "properties": {
+        "width": "",
+        "flexDirection": "column",
+        "fontFamily": "Inter, sans-serif"
+      }
+    },
+    {
+      "id": "page-1761489007826",
+      "name": "Page 2",
+      "position": {
+        "x": 100,
+        "y": 100
+      },
+      "size": {
+        "width": 1440,
+        "height": 1024
+      },
+      "components": [
+        {
+          "id": "comp-1761489015519",
+          "type": "text",
+          "name": "text 1",
+          "props": {
+            "text": "Text"
+          },
+          "styles": {},
+          "position": {
+            "x": 50,
+            "y": 50
+          },
+          "size": {
+            "width": 200,
+            "height": "auto"
+          },
+          "positionType": "relative"
+        }
+      ],
+      "breakpoint": "desktop",
+      "backgroundColor": "#ffffff",
+      "containerStyles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "minHeight": "100vh",
+        "width": "100%"
+      },
+      "containerProps": {
+        "className": "min-h-screen"
+      }
     }
   ],
-  "actions": [],
+  "actions": [
+    {
+      "name": "Action 1",
+      "type": "navigate",
+      "params": {
+        "pageId": "page-2"
+      },
+      "id": "action-1761489045913"
+    }
+  ],
   "canvasSettings": {
     "showGrid": false,
     "snapToGrid": true,
@@ -102,7 +179,7 @@
     "repo": "my-project",
     "defaultBranch": "main",
     "activeBranch": "main",
-    "lastSync": "2025-10-25T17:42:51.978Z"
+    "lastSync": "2025-10-26T14:28:54.253Z"
   },
   "currentPageId": "page-1761407980108"
 }
