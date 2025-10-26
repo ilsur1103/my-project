@@ -11,7 +11,7 @@ export default function Page2() {
       }}
     >
       <div style={{"position":"relative","left":"50px","top":"50px","width":"200px","height":"auto"}}>
-        Text
+        This is Page 2
       </div>
     </div>
   );

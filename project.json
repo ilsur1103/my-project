@@ -2,7 +2,7 @@
   "id": "1",
   "name": "E-commerce Landing",
   "description": "Modern e-commerce landing page",
-  "lastModified": "2025-10-26T14:32:19.585Z",
+  "lastModified": "2025-10-26T15:20:20.276Z",
   "components": [],
   "pages": [
     {
@@ -95,7 +95,10 @@
             "width": 120,
             "height": 40
           },
-          "positionType": "relative"
+          "positionType": "relative",
+          "actionHandlers": {
+            "onClick": "action-1761489045913"
+          }
         }
       ],
       "breakpoint": "desktop",
@@ -123,7 +126,7 @@
           "type": "text",
           "name": "text 1",
           "props": {
-            "text": "Text"
+            "text": "This is Page 2"
           },
           "styles": {},
           "position": {
@@ -153,9 +156,9 @@
   "actions": [
     {
       "name": "Action 1",
-      "type": "navigate",
+      "type": "navigateToPage",
       "params": {
-        "pageId": "page-2"
+        "pageId": "page-1761489007826"
       },
       "id": "action-1761489045913"
     }
@@ -179,7 +182,7 @@
     "repo": "my-project",
     "defaultBranch": "main",
     "activeBranch": "main",
-    "lastSync": "2025-10-26T14:28:54.253Z"
+    "lastSync": "2025-10-26T15:19:12.941Z"
   },
   "currentPageId": "page-1761407980108"
 }
