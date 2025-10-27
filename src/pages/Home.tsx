@@ -33,7 +33,7 @@ export default function Home({ openModal }: { openModal: (pageId: string, option
       width: '200px',
       height: '40px'
     } as const;
-  const custom-1761407990444Style1 = {
+  const custom_1761407990444Style1 = {
       position: 'absolute',
       left: '50px',
       top: '115px',
