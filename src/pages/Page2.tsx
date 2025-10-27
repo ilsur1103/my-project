@@ -29,7 +29,7 @@ export default function Page2({ openModal }: { openModal: (pageId: string, optio
       id="page-1761489007826"
       style={pageContainerStyle}
     >
-      <div style={{textStyle0}}>
+      <div id="comp-1761489015519" style={{textStyle0}}>
         This is Page 2
       </div>
     </div>

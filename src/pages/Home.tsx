@@ -63,7 +63,10 @@ export default function Home({ openModal }: { openModal: (pageId: string, option
       left: '0px',
       top: '0px',
       width: '100%',
-      height: '40px'
+      height: '40px',
+      borderRadius: '6px',
+      border: '2px solid #efefef',
+      padding: '6px'
     } as const;
 
   return (
@@ -72,6 +75,7 @@ export default function Home({ openModal }: { openModal: (pageId: string, option
       style={pageContainerStyle}
     >
       <input
+        id="comp-1761407986406"
         type="text"
         placeholder="Enter text..."
         value={variable1}
@@ -79,11 +83,11 @@ export default function Home({ openModal }: { openModal: (pageId: string, option
         style={{inputStyle0}}
       />
       <Custom17614079904442 text={variable1} title="Custom Component" count={0} isActive={false} />
-      <div style={{flexStyle2}}>
-        <button onClick={() => navigate('/page2')} style={{buttonStyle3}}>
+      <div id="comp-1761564399738" style={{flexStyle2}}>
+        <button id="comp-1761493557594" onClick={() => navigate('/page2')} style={{buttonStyle3}}>
           Button
         </button>
-        <button onClick={() => openModal('page-1761489007826', { title: '', closable: true })} style={{buttonStyle4}}>
+        <button id="comp-1761494794693" onClick={() => openModal('page-1761489007826', { title: '', closable: true })} style={{buttonStyle4}}>
           Open in modal
         </button>
       </div>
