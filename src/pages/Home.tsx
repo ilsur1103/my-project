@@ -7,8 +7,6 @@
 
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Input } from '../components/ui/input';
-import { Button } from '../components/ui/button';
 import Custom17614079904442 from '../components/Custom17614079904442';
 
 export default function Home({ openModal }: { openModal: (pageId: string, options?: { title?: string; closable?: boolean }) => void }) {
@@ -73,7 +71,7 @@ export default function Home({ openModal }: { openModal: (pageId: string, option
       id="page-1761407980108"
       style={pageContainerStyle}
     >
-      <Input
+      <input
         type="text"
         placeholder="Enter text..."
         value={variable1}
@@ -82,12 +80,12 @@ export default function Home({ openModal }: { openModal: (pageId: string, option
       />
       <Custom17614079904442 text={variable1} title="Custom Component" count={0} isActive={false} />
       <div style={{flexStyle2}}>
-        <Button onClick={() => navigate('/page2')} style={{buttonStyle3}}>
+        <button onClick={() => navigate('/page2')} style={{buttonStyle3}}>
           Button
-        </Button>
-        <Button onClick={() => openModal('page-1761489007826', { title: '', closable: true })} style={{buttonStyle4}}>
+        </button>
+        <button onClick={() => openModal('page-1761489007826', { title: '', closable: true })} style={{buttonStyle4}}>
           Open in modal
-        </Button>
+        </button>
       </div>
     </div>
   );

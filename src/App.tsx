@@ -7,7 +7,6 @@
 
 import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from './components/ui/dialog';
 import Home from './pages/Home';
 import Page2 from './pages/Page2';
 
@@ -47,36 +46,62 @@ function App() {
 
   return (
     <Router>
-      <div className="w-full min-h-screen">
+      <div style={{ width: '100%', minHeight: '100vh' }}>
         <Routes>
         <Route path="/" element={<Home openModal={openModal} />} />
         <Route path="/page2" element={<Page2 />} />
         </Routes>
       </div>
 
-      {/* Global Modal Dialog */}
-      <Dialog 
-        open={modalState.isOpen} 
-        onOpenChange={(open) => {
-          if (!open && modalState.closable) {
-            closeModal();
-          }
-        }}
-      >
-        <DialogContent 
-          className="max-w-4xl max-h-[90vh] overflow-y-auto"
-          onInteractOutside={(e) => {
-            if (!modalState.closable) {
-              e.preventDefault();
-            }
+      {/* Global Modal Dialog - Clean Native Implementation */}
+      {modalState.isOpen && (
+        <div 
+          style={{
+            position: 'fixed',
+            inset: 0,
+            backgroundColor: 'rgba(0, 0, 0, 0.5)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            zIndex: 9999,
           }}
+          onClick={() => modalState.closable && closeModal()}
         >
-          {modalState.title && (
-            <DialogHeader>
-              <DialogTitle>{modalState.title}</DialogTitle>
-            </DialogHeader>
-          )}
-          <div className="mt-4">
+          <div 
+            style={{
+              backgroundColor: 'white',
+              borderRadius: '8px',
+              padding: '24px',
+              maxWidth: '900px',
+              maxHeight: '90vh',
+              overflow: 'auto',
+              position: 'relative',
+            }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            {modalState.closable && (
+              <button
+                onClick={closeModal}
+                style={{
+                  position: 'absolute',
+                  top: '16px',
+                  right: '16px',
+                  background: 'none',
+                  border: 'none',
+                  fontSize: '24px',
+                  cursor: 'pointer',
+                  padding: '4px 8px',
+                }}
+              >
+                ×
+              </button>
+            )}
+            {modalState.title && (
+              <h2 style={{ marginTop: 0, marginBottom: '16px' }}>
+                {modalState.title}
+              </h2>
+            )}
+            <div>
         {modalState.pageId === 'page-1761407980108' && (
           <div style={{
           backgroundColor: '#ffffff',
@@ -97,9 +122,10 @@ function App() {
             <Page2 openModal={openModal} />
           </div>
         )}
+            </div>
           </div>
-        </DialogContent>
-      </Dialog>
+        </div>
+      )}
     </Router>
   );
 }
