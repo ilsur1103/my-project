@@ -2,7 +2,7 @@
   "id": "1",
   "name": "E-commerce Landing",
   "description": "Modern e-commerce landing page",
-  "lastModified": "2025-10-27T11:22:04.982Z",
+  "lastModified": "2025-10-27T11:27:01.834Z",
   "components": [],
   "pages": [
     {
@@ -59,7 +59,7 @@
           },
           "styles": {},
           "position": {
-            "x": 70,
+            "x": 50,
             "y": 115
           },
           "size": {
@@ -78,55 +78,81 @@
           }
         },
         {
-          "id": "comp-1761493557594",
-          "type": "button",
-          "name": "button 3",
-          "props": {
-            "text": "Button",
-            "variant": "default",
-            "disabled": false
+          "id": "comp-1761564399738",
+          "type": "flex",
+          "name": "Group 5",
+          "props": {},
+          "styles": {
+            "flexDirection": "row",
+            "gap": "8px",
+            "padding": "0px",
+            "justifyContent": "flex-start",
+            "alignItems": "flex-start",
+            "flexWrap": "nowrap"
           },
-          "styles": {},
           "position": {
-            "x": 58,
-            "y": 280
+            "x": 50,
+            "y": 258.33333333333337
           },
           "size": {
-            "width": 120,
-            "height": 40
+            "width": 587,
+            "height": "auto"
           },
-          "positionType": "relative",
-          "actionHandlers": {
-            "onClick": "action-1761489045913"
-          }
-        },
-        {
-          "id": "comp-1761494794693",
-          "type": "button",
-          "name": "button 4",
-          "props": {
-            "text": "Button",
-            "variant": "default",
-            "disabled": false
-          },
-          "styles": {},
-          "position": {
-            "x": 178,
-            "y": 186.33333333333334
-          },
-          "size": {
-            "width": 144,
-            "height": 40
-          },
-          "positionType": "relative",
-          "responsiveProps": {
-            "desktop": {
-              "text": "Open in modal"
+          "positionType": "absolute",
+          "layout": "flex",
+          "children": [
+            {
+              "id": "comp-1761493557594",
+              "type": "button",
+              "name": "button 3",
+              "props": {
+                "text": "Button",
+                "variant": "default",
+                "disabled": false
+              },
+              "styles": {},
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "size": {
+                "width": 120,
+                "height": 40
+              },
+              "positionType": "relative",
+              "actionHandlers": {
+                "onClick": "action-1761489045913"
+              }
+            },
+            {
+              "id": "comp-1761494794693",
+              "type": "button",
+              "name": "button 4",
+              "props": {
+                "text": "Button",
+                "variant": "default",
+                "disabled": false
+              },
+              "styles": {},
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "size": {
+                "width": "100%",
+                "height": 40
+              },
+              "positionType": "relative",
+              "responsiveProps": {
+                "desktop": {
+                  "text": "Open in modal"
+                }
+              },
+              "actionHandlers": {
+                "onClick": "action-1761494359797"
+              }
             }
-          },
-          "actionHandlers": {
-            "onClick": "action-1761494359797"
-          }
+          ]
         }
       ],
       "breakpoint": "desktop",
@@ -218,7 +244,7 @@
     "repo": "my-project",
     "defaultBranch": "main",
     "activeBranch": "main",
-    "lastSync": "2025-10-27T11:21:31.196Z"
+    "lastSync": "2025-10-27T11:25:41.129Z"
   },
   "currentPageId": "page-1761407980108"
 }

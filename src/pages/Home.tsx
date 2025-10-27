@@ -35,23 +35,36 @@ export default function Home({ openModal }: { openModal: (pageId: string, option
     } as const;
   const custom-1761407990444Style1 = {
       position: 'absolute',
-      left: '70px',
+      left: '50px',
       top: '115px',
       width: '200px',
       height: '100px'
     } as const;
-  const buttonStyle2 = {
-      position: 'relative',
-      left: '58px',
-      top: '280px',
-      width: '120px',
-      height: '40px'
+  const flexStyle2 = {
+      position: 'absolute',
+      left: '50px',
+      top: '258.33333333333337px',
+      width: '587px',
+      height: 'auto',
+      flexDirection: 'row',
+      gap: '8px',
+      padding: '0px',
+      justifyContent: 'flex-start',
+      alignItems: 'flex-start',
+      flexWrap: 'nowrap'
     } as const;
   const buttonStyle3 = {
       position: 'relative',
-      left: '178px',
-      top: '186.33333333333334px',
-      width: '144px',
+      left: '0px',
+      top: '0px',
+      width: '120px',
+      height: '40px'
+    } as const;
+  const buttonStyle4 = {
+      position: 'relative',
+      left: '0px',
+      top: '0px',
+      width: '100%',
       height: '40px'
     } as const;
 
@@ -68,12 +81,14 @@ export default function Home({ openModal }: { openModal: (pageId: string, option
         style={{inputStyle0}}
       />
       <Custom17614079904442 text={variable1} title="Custom Component" count={0} isActive={false} />
-      <Button onClick={() => navigate('/page2')} style={{buttonStyle2}}>
-        Button
-      </Button>
-      <Button onClick={() => openModal('page-1761489007826', { title: '', closable: true })} style={{buttonStyle3}}>
-        Open in modal
-      </Button>
+      <div style={{flexStyle2}}>
+        <Button onClick={() => navigate('/page2')} style={{buttonStyle3}}>
+          Button
+        </Button>
+        <Button onClick={() => openModal('page-1761489007826', { title: '', closable: true })} style={{buttonStyle4}}>
+          Open in modal
+        </Button>
+      </div>
     </div>
   );
 }
