@@ -2,7 +2,7 @@
   "id": "1",
   "name": "E-commerce Landing",
   "description": "Modern e-commerce landing page",
-  "lastModified": "2025-10-29T10:11:13.047Z",
+  "lastModified": "2025-10-29T10:24:03.603Z",
   "components": [],
   "pages": [
     {
@@ -160,6 +160,23 @@
               }
             }
           ]
+        },
+        {
+          "id": "comp-1761733436105",
+          "type": "custom-1761733420629",
+          "name": "custom-1761733420629 4",
+          "props": {},
+          "styles": {},
+          "position": {
+            "x": 50,
+            "y": 386.82767039021553
+          },
+          "size": {
+            "width": 200,
+            "height": "auto"
+          },
+          "positionType": "relative",
+          "customComponentCode": "import React, { useState } from 'react';\n\nconst runBlockingTest = (iterations: number): number => {\n  let result = 0;\n  for (let i = 0; i < iterations; i++) {\n    result += Math.sqrt(i);\n  }\n  return result;\n};\n\nconst CPUTestBlocking: React.FC = () => {\n  const [isTesting, setIsTesting] = useState(false);\n  const [timeTaken, setTimeTaken] = useState<number | null>(null);\n  const iterations = 500000; // Adjust for test intensity\n\n  const handleStartTest = () => {\n    setIsTesting(true);\n    setTimeTaken(null);\n    \n    // Start measuring time\n    const startTime = performance.now();\n    \n    // This blocks the main thread\n    runBlockingTest(iterations);\n    \n    // Stop measuring time\n    const endTime = performance.now();\n    \n    setIsTesting(false);\n    setTimeTaken(endTime - startTime);\n  };\n\n  return (\n    <div>\n      <h3>Simple Blocking CPU Test</h3>\n      <p>This test runs on the main thread and will freeze the UI.</p>\n      <button onClick={handleStartTest} disabled={isTesting}>\n        {isTesting ? 'Testing...' : 'Start Test'}\n      </button>\n      {timeTaken !== null && (\n        <p>Test completed in {timeTaken.toFixed(2)} ms.</p>\n      )}\n    </div>\n  );\n};\n\nexport default CPUTestBlocking;"
         }
       ],
       "breakpoint": "desktop",
@@ -251,7 +268,7 @@
     "repo": "my-project",
     "defaultBranch": "main",
     "activeBranch": "main",
-    "lastSync": "2025-10-29T10:11:00.534Z"
+    "lastSync": "2025-10-29T10:23:14.048Z"
   },
   "currentPageId": "page-1761407980108"
 }

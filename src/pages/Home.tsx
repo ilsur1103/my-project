@@ -8,6 +8,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Custom17614079904442 from '../components/Custom17614079904442';
+import Custom17617334206294 from '../components/Custom17617334206294';
 
 import './Home.css';
 
@@ -49,6 +50,7 @@ export default function Home({ openModal }: { openModal: (pageId: string, option
           Open in modal
         </button>
       </div>
+      <Custom17617334206294 />
     </div>
   );
 }
