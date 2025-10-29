@@ -6,6 +6,8 @@ Modern e-commerce landing page
 
 This project was created with the Web App Builder and uses Vite + React + TypeScript.
 
+**🎨 Quick Preview:** Open `preview.html` in your browser to instantly see your app with all system styles applied!
+
 **🚀 Automatic Deployment:** This project includes GitHub Actions workflow for automatic deployment to GitHub Pages. See `DEPLOYMENT.md` for setup instructions.
 
 ### Prerequisites
@@ -16,10 +18,11 @@ This project was created with the Web App Builder and uses Vite + React + TypeSc
 
 Downloaded files will have prefixed names. Organize them first:
 
-1. Create project folder
-2. Extract files, removing the `projectname__` prefix
-3. Replace `__` with `/` to restore directory structure
-4. Or see SETUP.md for helper scripts
+1. **Instant Preview:** Open `preview.html` in any browser to see your design with production styles
+2. Create project folder
+3. Extract files, removing the `projectname__` prefix
+4. Replace `__` with `/` to restore directory structure
+5. Or see SETUP.md for helper scripts
 
 ### Installation
 
@@ -118,7 +121,7 @@ cp .env.example .env
 
 ## Last Modified
 
-10/27/2025, 5:22:46 PM
+10/29/2025, 3:11:13 PM
 
 ---
 
