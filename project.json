@@ -2,7 +2,7 @@
   "id": "1",
   "name": "E-commerce Landing",
   "description": "Modern e-commerce landing page",
-  "lastModified": "2025-10-29T10:24:03.603Z",
+  "lastModified": "2025-10-29T13:05:56.502Z",
   "components": [],
   "pages": [
     {
@@ -268,7 +268,23 @@
     "repo": "my-project",
     "defaultBranch": "main",
     "activeBranch": "main",
-    "lastSync": "2025-10-29T10:23:14.048Z"
+    "lastSync": "2025-10-29T13:03:41.438Z"
   },
-  "currentPageId": "page-1761407980108"
+  "currentPageId": "page-1761407980108",
+  "customComponents": [
+    {
+      "id": "custom-1761407990444",
+      "name": "CustomComponent",
+      "code": "import React from 'react';\n\ninterface CustomComponentProps {\n  // Define your props here (these will appear in the Property Panel)\n  text?: string;\n  title?: string;\n  count?: number;\n  isActive?: boolean;\n  className?: string;\n}\n\nexport default function CustomComponent({ \n  text = 'Hello', \n  title = 'Custom Component',\n  count = 0,\n  isActive = false,\n  className \n}: CustomComponentProps) {\n  return (\n    <div className={className}>\n      <h3>{title}</h3>\n      <p>{text}</p>\n      <p>Count: {count}</p>\n      <p>Active: {isActive ? 'Yes' : 'No'}</p>\n    </div>\n  );\n}\n",
+      "props": {},
+      "category": "custom"
+    },
+    {
+      "id": "custom-1761733420629",
+      "name": "runBlockingTest",
+      "code": "import React, { useState } from 'react';\n\ninterface UserProp {\n  iteraction: number;\n}\n\nconst runBlockingTest = (iterations: number): number => {\n  let result = 0;\n  for (let i = 0; i < iterations; i++) {\n    result += Math.sqrt(i);\n  }\n  return result;\n};\n\nconst CPUTestBlocking: React.FC = (props: UserProp) => {\n  const [isTesting, setIsTesting] = useState(false);\n  const [timeTaken, setTimeTaken] = useState<number | null>(null);\n  const iterations = props.iteraction | 500000; // Adjust for test intensity\n\n  const handleStartTest = () => {\n    setIsTesting(true);\n    setTimeTaken(null);\n    \n    // Start measuring time\n    const startTime = performance.now();\n    \n    // This blocks the main thread\n    runBlockingTest(iterations);\n    \n    // Stop measuring time\n    const endTime = performance.now();\n    \n    setIsTesting(false);\n    setTimeTaken(endTime - startTime);\n  };\n\n  return (\n    <div>\n      <h3>Simple Blocking CPU Test</h3>\n      <p>This test runs on the main thread and will freeze the UI with iteraction {iterations}.</p>\n      <button onClick={handleStartTest} disabled={isTesting}>\n        {isTesting ? 'Testing...' : 'Start Test'}\n      </button>\n      {timeTaken !== null && (\n        <p>Test completed in {timeTaken.toFixed(2)} ms.</p>\n      )}\n    </div>\n  );\n};\n\nexport default CPUTestBlocking;",
+      "props": {},
+      "category": "custom"
+    }
+  ]
 }
