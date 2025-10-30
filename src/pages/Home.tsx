@@ -19,14 +19,12 @@ export default function Home({ openModal }: { openModal: (pageId: string, option
 
   // Page container style
   const pageContainerStyle = {
-    width: '1440px',
-    minHeight: '1024px',
-    backgroundColor: '#ffffff',
     position: 'relative',
     margin: '0 auto',
     display: 'flex',
+    fontFamily: 'Inter, sans-serif',
     flexDirection: 'column',
-    fontFamily: 'Inter, sans-serif'
+    gap: '16px'
   } as const;
 
   return (

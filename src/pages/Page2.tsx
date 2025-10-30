@@ -10,13 +10,8 @@ import './Page2.css';
 export default function Page2({ openModal }: { openModal: (pageId: string, options?: { title?: string; closable?: boolean }) => void }) {
   // Page container style
   const pageContainerStyle = {
-    width: '1440px',
-    minHeight: '1024px',
-    backgroundColor: '#ffffff',
     position: 'relative',
-    margin: '0 auto',
-    display: 'flex',
-    flexDirection: 'column'
+    margin: '0 auto'
   } as const;
 
   return (

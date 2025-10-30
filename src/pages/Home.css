@@ -2,8 +2,6 @@
 
 .home-input-comp-1761407986406 {
   position: relative;
-  left: 50px;
-  top: 49px;
   width: 200px;
   height: 40px;
   border: ;
@@ -13,16 +11,12 @@
 
 .home-custom-1761407990444-comp-1761407992563 {
   position: relative;
-  left: 50px;
-  top: 115px;
   width: 200px;
   height: 100px;
 }
 
 .home-flex-comp-1761564399738 {
   position: relative;
-  left: 50px;
-  top: 258.33333333333337px;
   width: 587px;
   height: auto;
   flex-direction: row;
@@ -35,16 +29,12 @@
 
 .home-button-comp-1761493557594 {
   position: relative;
-  left: 0px;
-  top: 0px;
   width: 120px;
   height: 40px;
 }
 
 .home-button-comp-1761494794693 {
   position: relative;
-  left: 0px;
-  top: 0px;
   width: 100%;
   height: 40px;
   border-radius: 6px;
@@ -54,16 +44,12 @@
 
 .home-custom-1761733420629-comp-1761733436105 {
   position: relative;
-  left: 50px;
-  top: 364.27px;
   width: 413.75px;
-  height: 72px;
+  height: auto;
 }
 
 .home-custom-1761407990444-comp-1761820012647 {
   position: relative;
-  left: 50px;
-  top: 515.61px;
   width: 200px;
   height: 100px;
 }
