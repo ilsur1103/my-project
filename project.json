@@ -2,7 +2,7 @@
   "id": "1",
   "name": "E-commerce Landing",
   "description": "Modern e-commerce landing page",
-  "lastModified": "2025-10-29T13:05:56.502Z",
+  "lastModified": "2025-10-30T05:59:29.490Z",
   "components": [],
   "pages": [
     {
@@ -172,7 +172,7 @@
             "y": 386.82767039021553
           },
           "size": {
-            "width": 200,
+            "width": 396.56502657526073,
             "height": "auto"
           },
           "positionType": "relative",
@@ -268,7 +268,7 @@
     "repo": "my-project",
     "defaultBranch": "main",
     "activeBranch": "main",
-    "lastSync": "2025-10-29T13:03:41.438Z"
+    "lastSync": "2025-10-30T05:58:15.217Z"
   },
   "currentPageId": "page-1761407980108",
   "customComponents": [
@@ -282,9 +282,43 @@
     {
       "id": "custom-1761733420629",
       "name": "runBlockingTest",
-      "code": "import React, { useState } from 'react';\n\ninterface UserProp {\n  iteraction: number;\n}\n\nconst runBlockingTest = (iterations: number): number => {\n  let result = 0;\n  for (let i = 0; i < iterations; i++) {\n    result += Math.sqrt(i);\n  }\n  return result;\n};\n\nconst CPUTestBlocking: React.FC = (props: UserProp) => {\n  const [isTesting, setIsTesting] = useState(false);\n  const [timeTaken, setTimeTaken] = useState<number | null>(null);\n  const iterations = props.iteraction | 500000; // Adjust for test intensity\n\n  const handleStartTest = () => {\n    setIsTesting(true);\n    setTimeTaken(null);\n    \n    // Start measuring time\n    const startTime = performance.now();\n    \n    // This blocks the main thread\n    runBlockingTest(iterations);\n    \n    // Stop measuring time\n    const endTime = performance.now();\n    \n    setIsTesting(false);\n    setTimeTaken(endTime - startTime);\n  };\n\n  return (\n    <div>\n      <h3>Simple Blocking CPU Test</h3>\n      <p>This test runs on the main thread and will freeze the UI with iteraction {iterations}.</p>\n      <button onClick={handleStartTest} disabled={isTesting}>\n        {isTesting ? 'Testing...' : 'Start Test'}\n      </button>\n      {timeTaken !== null && (\n        <p>Test completed in {timeTaken.toFixed(2)} ms.</p>\n      )}\n    </div>\n  );\n};\n\nexport default CPUTestBlocking;",
+      "code": "import React, { useState } from 'react';\n\nconst runBlockingTest = (iterations: number): number => {\n  let result = 0;\n  for (let i = 0; i < iterations; i++) {\n    result += Math.sqrt(i);\n  }\n  return result;\n};\n\nconst CPUTestBlocking: React.FC = () => {\n  const [isTesting, setIsTesting] = useState(false);\n  const [timeTaken, setTimeTaken] = useState<number | null>(null);\n  const iterations = 500000; // Adjust for test intensity\n\n  const handleStartTest = () => {\n    setIsTesting(true);\n    setTimeTaken(null);\n    \n    // Start measuring time\n    const startTime = performance.now();\n    \n    // This blocks the main thread\n    runBlockingTest(iterations);\n    \n    // Stop measuring time\n    const endTime = performance.now();\n    \n    setIsTesting(false);\n    setTimeTaken(endTime - startTime);\n  };\n\n  return (\n    <div>\n      <h3>Simple Blocking CPU Test</h3>\n      <p>This test runs on the main thread and will freeze the UI.</p>\n      <button onClick={handleStartTest} disabled={isTesting}>\n        {isTesting ? 'Testing...' : 'Start Test'}\n      </button>\n      {timeTaken !== null && (\n        <p>Test completed in {timeTaken.toFixed(2)} ms.</p>\n      )}\n    </div>\n  );\n};\n\nexport default CPUTestBlocking;",
       "props": {},
       "category": "custom"
     }
-  ]
+  ],
+  "styleSystem": {
+    "typography": [],
+    "modes": [
+      {
+        "id": "default",
+        "name": "Default",
+        "isDefault": true,
+        "colors": [
+          {
+            "id": "color-1761803919268",
+            "name": "123",
+            "value": "#000000"
+          }
+        ],
+        "shadows": [],
+        "sizes": []
+      },
+      {
+        "id": "mode-1761803927866",
+        "name": "dark",
+        "isDefault": false,
+        "colors": [
+          {
+            "id": "color-1761803919268",
+            "name": "123",
+            "value": "#fafafa"
+          }
+        ],
+        "shadows": [],
+        "sizes": []
+      }
+    ],
+    "activeMode": "default"
+  }
 }
