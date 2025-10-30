@@ -1,15 +1,18 @@
 /* Styles for Home page */
 
 .home-input-comp-1761407986406 {
-  position: absolute;
+  position: relative;
   left: 50px;
   top: 49px;
   width: 200px;
   height: 40px;
+  border: ;
+  border-width: 2px;
+  border-color: efefef;
 }
 
 .home-custom-1761407990444-comp-1761407992563 {
-  position: absolute;
+  position: relative;
   left: 50px;
   top: 115px;
   width: 200px;
@@ -17,7 +20,7 @@
 }
 
 .home-flex-comp-1761564399738 {
-  position: absolute;
+  position: relative;
   left: 50px;
   top: 258.33333333333337px;
   width: 587px;
@@ -52,7 +55,15 @@
 .home-custom-1761733420629-comp-1761733436105 {
   position: relative;
   left: 50px;
-  top: 386.82767039021553px;
-  width: 396.56502657526073px;
-  height: auto;
+  top: 364.27px;
+  width: 413.75px;
+  height: 72px;
+}
+
+.home-custom-1761407990444-comp-1761820012647 {
+  position: relative;
+  left: 50px;
+  top: 515.61px;
+  width: 200px;
+  height: 100px;
 }

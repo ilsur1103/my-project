@@ -9,6 +9,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Custom17614079904442 from '../components/Custom17614079904442';
 import Custom17617334206294 from '../components/Custom17617334206294';
+import Custom17614079904445 from '../components/Custom17614079904445';
 
 import './Home.css';
 
@@ -51,6 +52,7 @@ export default function Home({ openModal }: { openModal: (pageId: string, option
         </button>
       </div>
       <Custom17617334206294 />
+      <Custom17614079904445 text="Hello" title="Custom Component" count={0} isActive={false} />
     </div>
   );
 }
