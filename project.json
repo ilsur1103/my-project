@@ -2,7 +2,7 @@
   "id": "1",
   "name": "E-commerce Landing",
   "description": "Modern e-commerce landing page",
-  "lastModified": "2025-10-30T05:59:29.490Z",
+  "lastModified": "2025-10-30T06:19:04.757Z",
   "components": [],
   "pages": [
     {
@@ -268,7 +268,7 @@
     "repo": "my-project",
     "defaultBranch": "main",
     "activeBranch": "main",
-    "lastSync": "2025-10-30T05:58:15.217Z"
+    "lastSync": "2025-10-30T06:19:02.678Z"
   },
   "currentPageId": "page-1761407980108",
   "customComponents": [
@@ -296,8 +296,8 @@
         "isDefault": true,
         "colors": [
           {
-            "id": "color-1761803919268",
-            "name": "123",
+            "id": "color-1761805099978",
+            "name": "main-text",
             "value": "#000000"
           }
         ],
@@ -305,14 +305,14 @@
         "sizes": []
       },
       {
-        "id": "mode-1761803927866",
-        "name": "dark",
+        "id": "mode-1761805118303",
+        "name": "Dark mode",
         "isDefault": false,
         "colors": [
           {
-            "id": "color-1761803919268",
-            "name": "123",
-            "value": "#fafafa"
+            "id": "color-1761805099978",
+            "name": "main-text",
+            "value": "#ededed"
           }
         ],
         "shadows": [],
