@@ -42,14 +42,26 @@
   padding: 6px;
 }
 
-.home-custom-1761733420629-comp-1761733436105 {
+.home-flex-comp-1761894659513 {
   position: relative;
-  width: 413.75px;
+  width: 1006.67px;
   height: auto;
+  flex-direction: row;
+  gap: 8px;
+  padding: 0px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
 }
 
 .home-custom-1761407990444-comp-1761820012647 {
   position: relative;
   width: 200px;
   height: 100px;
+}
+
+.home-custom-1761733420629-comp-1761733436105 {
+  position: relative;
+  width: 413.75px;
+  height: auto;
 }
