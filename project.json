@@ -2,7 +2,7 @@
   "id": "1",
   "name": "E-commerce Landing",
   "description": "Modern e-commerce landing page",
-  "lastModified": "2025-10-31T07:11:31.912Z",
+  "lastModified": "2025-10-31T11:56:45.967Z",
   "components": [],
   "pages": [
     {
@@ -35,7 +35,7 @@
           },
           "size": {
             "width": 200,
-            "height": 40
+            "height": 20
           },
           "positionType": "relative",
           "responsiveProps": {
@@ -48,9 +48,9 @@
           },
           "responsiveStyles": {
             "desktop": {
-              "border": "",
+              "border": "1px solid",
               "borderWidth": "2px",
-              "borderColor": "efefef"
+              "borderColor": "#787878"
             }
           }
         },
@@ -71,7 +71,7 @@
           },
           "size": {
             "width": 200,
-            "height": 100
+            "height": "auto"
           },
           "positionType": "relative",
           "customComponentCode": "import React from 'react';\n\ninterface CustomComponentProps {\n  // Define your props here (these will appear in the Property Panel)\n  text?: string;\n  title?: string;\n  count?: number;\n  isActive?: boolean;\n  className?: string;\n}\n\nexport default function CustomComponent({ \n  text = 'Hello', \n  title = 'Custom Component',\n  count = 0,\n  isActive = false,\n  className \n}: CustomComponentProps) {\n  return (\n    <div className={className}>\n      <h3>{title}</h3>\n      <p>{text}</p>\n      <p>Count: {count}</p>\n      <p>Active: {isActive ? 'Yes' : 'No'}</p>\n    </div>\n  );\n}\n",
@@ -102,7 +102,7 @@
             "y": 258.33333333333337
           },
           "size": {
-            "width": 587,
+            "width": 200,
             "height": "auto"
           },
           "positionType": "relative",
@@ -186,7 +186,7 @@
             "y": 364.27
           },
           "size": {
-            "width": 1006.67,
+            "width": 200,
             "height": "auto"
           },
           "positionType": "relative",
@@ -336,7 +336,7 @@
     "repo": "my-project",
     "defaultBranch": "main",
     "activeBranch": "main",
-    "lastSync": "2025-10-31T07:10:39.816Z"
+    "lastSync": "2025-10-31T11:55:28.533Z"
   },
   "currentPageId": "page-1761407980108",
   "customComponents": [

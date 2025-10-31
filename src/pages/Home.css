@@ -3,21 +3,21 @@
 .home-input-comp-1761407986406 {
   position: relative;
   width: 200px;
-  height: 40px;
-  border: ;
+  height: 20px;
+  border: 1px solid;
   border-width: 2px;
-  border-color: efefef;
+  border-color: #787878;
 }
 
 .home-custom-1761407990444-comp-1761407992563 {
   position: relative;
   width: 200px;
-  height: 100px;
+  height: auto;
 }
 
 .home-flex-comp-1761564399738 {
   position: relative;
-  width: 587px;
+  width: 200px;
   height: auto;
   flex-direction: row;
   gap: 8px;
@@ -44,7 +44,7 @@
 
 .home-flex-comp-1761894659513 {
   position: relative;
-  width: 1006.67px;
+  width: 200px;
   height: auto;
   flex-direction: row;
   gap: 8px;
