@@ -1,7 +1,9 @@
 /* Styles for Home page */
 
 .home-input-comp-1761407986406 {
-  position: relative;
+  position: absolute;
+  left: 50px;
+  top: 49px;
   width: 200px;
   height: 20px;
   border: 1px solid;
@@ -10,13 +12,17 @@
 }
 
 .home-custom-1761407990444-comp-1761407992563 {
-  position: relative;
+  position: absolute;
+  left: 50px;
+  top: 115px;
   width: 200px;
   height: auto;
 }
 
 .home-flex-comp-1761564399738 {
-  position: relative;
+  position: absolute;
+  left: 50px;
+  top: 258.33333333333337px;
   width: 200px;
   height: auto;
   flex-direction: row;
@@ -43,7 +49,9 @@
 }
 
 .home-flex-comp-1761894659513 {
-  position: relative;
+  position: absolute;
+  left: 50px;
+  top: 364.27px;
   width: 200px;
   height: auto;
   flex-direction: row;

@@ -184,24 +184,21 @@
   }
 }
 
-html {
-  font-size: var(--font-size);
+/**
+ * Box sizing for all elements
+ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-/* Disable browser text selection in edit mode */
-.no-user-select {
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-}
-
-/* Allow text selection in inputs and textareas even when parent has no-user-select */
-.no-user-select input,
-.no-user-select textarea,
-.no-user-select [contenteditable="true"] {
-  user-select: text;
-  -webkit-user-select: text;
-  -moz-user-select: text;
-  -ms-user-select: text;
+/**
+ * Remove default margins and padding (browser reset)
+ * Users will add their own spacing via the property panel
+ */
+html,
+body {
+  margin: 0;
+  padding: 0;
 }

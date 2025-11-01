@@ -191,26 +191,23 @@
   }
 }
 
-html {
-  font-size: var(--font-size);
+/**
+ * Box sizing for all elements
+ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-/* Disable browser text selection in edit mode */
-.no-user-select {
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-}
-
-/* Allow text selection in inputs and textareas even when parent has no-user-select */
-.no-user-select input,
-.no-user-select textarea,
-.no-user-select [contenteditable="true"] {
-  user-select: text;
-  -webkit-user-select: text;
-  -moz-user-select: text;
-  -ms-user-select: text;
+/**
+ * Remove default margins and padding (browser reset)
+ * Users will add their own spacing via the property panel
+ */
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -234,15 +231,15 @@ body {
     position: relative;
     
   ">
-    <input id="comp-1761407986406" type="text" placeholder="Enter text..." style="position: relative; left: 50px; top: 49px; width: 200px; height: 20px">
-    <div id="comp-1761407992563" style="position: relative; left: 50px; top: 115px; width: 200px; height: auto">
+    <input id="comp-1761407986406" type="text" placeholder="Enter text..." style="position: absolute; left: 50px; top: 49px; width: 200px; height: 20px">
+    <div id="comp-1761407992563" style="position: absolute; left: 50px; top: 115px; width: 200px; height: auto">
 
     </div>
-    <div id="comp-1761564399738" style="position: relative; left: 50px; top: 258.33333333333337px; width: 200px; height: auto; flex-direction: row; gap: 8px; padding: 0px; justify-content: flex-start; align-items: flex-start; flex-wrap: nowrap; display: flex">
+    <div id="comp-1761564399738" style="position: absolute; left: 50px; top: 258.33333333333337px; width: 200px; height: auto; flex-direction: row; gap: 8px; padding: 0px; justify-content: flex-start; align-items: flex-start; flex-wrap: nowrap; display: flex">
       <button id="comp-1761493557594" style="position: relative; left: 0px; top: 0px; width: 120px; height: 40px">Button</button>
       <button id="comp-1761494794693" style="position: relative; left: 0px; top: 0px; width: 100%; height: 40px">Button</button>
     </div>
-    <div id="comp-1761894659513" style="position: relative; left: 50px; top: 364.27px; width: 200px; height: auto; flex-direction: row; gap: 8px; padding: 0px; justify-content: flex-start; align-items: flex-start; flex-wrap: nowrap; display: flex">
+    <div id="comp-1761894659513" style="position: absolute; left: 50px; top: 364.27px; width: 200px; height: auto; flex-direction: row; gap: 8px; padding: 0px; justify-content: flex-start; align-items: flex-start; flex-wrap: nowrap; display: flex">
       <div id="comp-1761820012647" style="position: relative; left: 0px; top: 0px; width: 200px; height: 100px">
 
       </div>

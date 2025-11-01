@@ -2,7 +2,7 @@
   "id": "1",
   "name": "E-commerce Landing",
   "description": "Modern e-commerce landing page",
-  "lastModified": "2025-10-31T11:56:45.967Z",
+  "lastModified": "2025-11-01T05:29:16.972Z",
   "components": [],
   "pages": [
     {
@@ -37,7 +37,7 @@
             "width": 200,
             "height": 20
           },
-          "positionType": "relative",
+          "positionType": "absolute",
           "responsiveProps": {
             "desktop": {
               "value": {
@@ -73,7 +73,7 @@
             "width": 200,
             "height": "auto"
           },
-          "positionType": "relative",
+          "positionType": "absolute",
           "customComponentCode": "import React from 'react';\n\ninterface CustomComponentProps {\n  // Define your props here (these will appear in the Property Panel)\n  text?: string;\n  title?: string;\n  count?: number;\n  isActive?: boolean;\n  className?: string;\n}\n\nexport default function CustomComponent({ \n  text = 'Hello', \n  title = 'Custom Component',\n  count = 0,\n  isActive = false,\n  className \n}: CustomComponentProps) {\n  return (\n    <div className={className}>\n      <h3>{title}</h3>\n      <p>{text}</p>\n      <p>Count: {count}</p>\n      <p>Active: {isActive ? 'Yes' : 'No'}</p>\n    </div>\n  );\n}\n",
           "responsiveProps": {
             "desktop": {
@@ -105,7 +105,7 @@
             "width": 200,
             "height": "auto"
           },
-          "positionType": "relative",
+          "positionType": "absolute",
           "layout": "flex",
           "children": [
             {
@@ -189,7 +189,7 @@
             "width": 200,
             "height": "auto"
           },
-          "positionType": "relative",
+          "positionType": "absolute",
           "layout": "flex",
           "children": [
             {
@@ -251,7 +251,7 @@
         "width": "",
         "flexDirection": "column",
         "fontFamily": "Inter, sans-serif",
-        "display": "flex",
+        "display": "block",
         "gap": "16px"
       }
     },
@@ -336,7 +336,7 @@
     "repo": "my-project",
     "defaultBranch": "main",
     "activeBranch": "main",
-    "lastSync": "2025-10-31T11:55:28.533Z"
+    "lastSync": "2025-11-01T05:29:00.243Z"
   },
   "currentPageId": "page-1761407980108",
   "customComponents": [
