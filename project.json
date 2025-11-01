@@ -2,7 +2,7 @@
   "id": "1",
   "name": "E-commerce Landing",
   "description": "Modern e-commerce landing page",
-  "lastModified": "2025-11-01T05:29:16.972Z",
+  "lastModified": "2025-11-01T09:08:43.146Z",
   "components": [],
   "pages": [
     {
@@ -37,7 +37,7 @@
             "width": 200,
             "height": 20
           },
-          "positionType": "absolute",
+          "positionType": "relative",
           "responsiveProps": {
             "desktop": {
               "value": {
@@ -70,10 +70,10 @@
             "y": 115
           },
           "size": {
-            "width": 200,
-            "height": "auto"
+            "width": 441.68,
+            "height": 96
           },
-          "positionType": "absolute",
+          "positionType": "relative",
           "customComponentCode": "import React from 'react';\n\ninterface CustomComponentProps {\n  // Define your props here (these will appear in the Property Panel)\n  text?: string;\n  title?: string;\n  count?: number;\n  isActive?: boolean;\n  className?: string;\n}\n\nexport default function CustomComponent({ \n  text = 'Hello', \n  title = 'Custom Component',\n  count = 0,\n  isActive = false,\n  className \n}: CustomComponentProps) {\n  return (\n    <div className={className}>\n      <h3>{title}</h3>\n      <p>{text}</p>\n      <p>Count: {count}</p>\n      <p>Active: {isActive ? 'Yes' : 'No'}</p>\n    </div>\n  );\n}\n",
           "responsiveProps": {
             "desktop": {
@@ -99,13 +99,13 @@
           },
           "position": {
             "x": 50,
-            "y": 258.33333333333337
+            "y": 258.33
           },
           "size": {
-            "width": 200,
-            "height": "auto"
+            "width": 500.76,
+            "height": 40
           },
-          "positionType": "absolute",
+          "positionType": "relative",
           "layout": "flex",
           "children": [
             {
@@ -186,10 +186,10 @@
             "y": 364.27
           },
           "size": {
-            "width": 200,
-            "height": "auto"
+            "width": 401.94,
+            "height": 216
           },
-          "positionType": "absolute",
+          "positionType": "relative",
           "layout": "flex",
           "children": [
             {
@@ -251,7 +251,7 @@
         "width": "",
         "flexDirection": "column",
         "fontFamily": "Inter, sans-serif",
-        "display": "block",
+        "display": "flex",
         "gap": "16px"
       }
     },
@@ -334,9 +334,7 @@
   "github": {
     "owner": "ilsur1103",
     "repo": "my-project",
-    "defaultBranch": "main",
-    "activeBranch": "main",
-    "lastSync": "2025-11-01T05:29:00.243Z"
+    "defaultBranch": "main"
   },
   "currentPageId": "page-1761407980108",
   "customComponents": [

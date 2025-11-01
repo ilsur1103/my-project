@@ -21,8 +21,10 @@ export default function Home({ openModal }: { openModal: (pageId: string, option
   const pageContainerStyle = {
     position: 'relative',
     margin: '0 auto',
-    display: 'block',
-    fontFamily: 'Inter, sans-serif'
+    display: 'flex',
+    fontFamily: 'Inter, sans-serif',
+    flexDirection: 'column',
+    gap: '16px'
   } as const;
 
   return (
