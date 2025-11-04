@@ -3,12 +3,13 @@
   "version": 1,
   "records": [
     {
-      "id": "record_1762270323450_t4ixucxp2",
-      "field_1762158479582_0": "",
-      "field_1762158479582_1": "",
-      "field_1762158479582_2": 1
+      "id": "record_1762273570734_mjgti5dp5",
+      "field_1762158479582_0": "Ilsur",
+      "field_1762158479582_1": "Aptukov",
+      "field_1762158479582_2": 1,
+      "field_1762270480669_3": "ilsur@aptukov.ru"
     }
   ],
   "recordCount": 1,
-  "lastModified": "2025-11-04T15:34:42.674Z"
+  "lastModified": "2025-11-04T16:26:33.966Z"
 }
