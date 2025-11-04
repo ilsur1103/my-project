@@ -2,7 +2,7 @@
   "id": "1",
   "name": "E-commerce Landing",
   "description": "Modern e-commerce landing page",
-  "lastModified": "2025-11-04T16:40:38.200Z",
+  "lastModified": "2025-11-04T17:01:36.667Z",
   "components": [],
   "pages": [
     {
@@ -472,7 +472,7 @@
     "repo": "my-project",
     "defaultBranch": "main",
     "activeBranch": "main",
-    "lastSync": "2025-11-04T16:40:28.645Z"
+    "lastSync": "2025-11-04T16:57:24.834Z"
   },
   "currentPageId": "page-1761407980108",
   "customComponents": [
@@ -550,7 +550,7 @@
       ],
       "dataFileId": "collection_1762158479582.json",
       "createdAt": "2025-11-03T08:27:59.582Z",
-      "updatedAt": "2025-11-04T16:40:36.192Z"
+      "updatedAt": "2025-11-04T17:01:34.656Z"
     }
   ]
 }
