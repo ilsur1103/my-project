@@ -8,8 +8,15 @@
       "field_1762158479582_1": "Aptukov",
       "field_1762158479582_2": 1,
       "field_1762270480669_3": "ilsur@aptukov.ru"
+    },
+    {
+      "id": "record_1762273611110_k1fjdk709",
+      "field_1762158479582_0": "Aleksey",
+      "field_1762158479582_1": "Nekrasov",
+      "field_1762158479582_2": 0,
+      "field_1762270480669_3": "a.nekrasov@bright-soft.ru"
     }
   ],
-  "recordCount": 1,
-  "lastModified": "2025-11-04T16:26:33.966Z"
+  "recordCount": 2,
+  "lastModified": "2025-11-04T16:27:32.381Z"
 }
