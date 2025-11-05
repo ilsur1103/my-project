@@ -2,7 +2,7 @@
   "id": "1",
   "name": "E-commerce Landing",
   "description": "Modern e-commerce landing page",
-  "lastModified": "2025-11-05T11:30:50.232Z",
+  "lastModified": "2025-11-05T11:32:01.464Z",
   "components": [],
   "pages": [
     {
@@ -397,7 +397,7 @@
             }
           ],
           "config": {
-            "collectionId": "",
+            "collectionId": "collection_1762158479582",
             "selectedColumns": [],
             "rowsStart": 0,
             "rowsEnd": -1
