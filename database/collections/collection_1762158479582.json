@@ -1,7 +1,15 @@
 {
   "collectionId": "collection_1762158479582",
   "version": 1,
-  "records": [],
-  "recordCount": 0,
-  "lastModified": "2025-11-05T10:18:28.565Z"
+  "records": [
+    {
+      "id": "record_1762342204223_tw0hleew0",
+      "field_1762158479582_0": "123",
+      "field_1762158479582_1": "123",
+      "field_1762158479582_2": 0,
+      "field_1762270480669_3": ""
+    }
+  ],
+  "recordCount": 1,
+  "lastModified": "2025-11-05T11:30:30.375Z"
 }

@@ -2,7 +2,7 @@
   "id": "1",
   "name": "E-commerce Landing",
   "description": "Modern e-commerce landing page",
-  "lastModified": "2025-11-05T10:23:35.594Z",
+  "lastModified": "2025-11-05T11:30:50.232Z",
   "components": [],
   "pages": [
     {
@@ -322,100 +322,6 @@
       "params": {},
       "nodes": [
         {
-          "id": "node-1762233434752-zyg2zfncq",
-          "definitionId": "const-string",
-          "label": "String",
-          "position": {
-            "x": 80,
-            "y": 264
-          },
-          "inputs": [
-            {
-              "id": "value",
-              "name": "Value",
-              "type": "string",
-              "value": ""
-            }
-          ],
-          "outputs": [
-            {
-              "id": "value",
-              "name": "Value",
-              "type": "string"
-            }
-          ],
-          "config": {
-            "value": "IlsurAptukov"
-          }
-        },
-        {
-          "id": "node-1762233441138-y7pa620s5",
-          "definitionId": "var-get",
-          "label": "Get Variable",
-          "position": {
-            "x": 80,
-            "y": 80
-          },
-          "inputs": [],
-          "outputs": [
-            {
-              "id": "value",
-              "name": "Value",
-              "type": "any"
-            }
-          ],
-          "config": {
-            "variableName": "variable1"
-          }
-        },
-        {
-          "id": "node-1762233465499-okshg8sjr",
-          "definitionId": "string-concat",
-          "label": "Concatenate",
-          "position": {
-            "x": 600,
-            "y": 160
-          },
-          "inputs": [
-            {
-              "id": "a",
-              "name": "A",
-              "type": "string",
-              "value": ""
-            },
-            {
-              "id": "b",
-              "name": "B",
-              "type": "string",
-              "value": ""
-            }
-          ],
-          "outputs": [
-            {
-              "id": "result",
-              "name": "Result",
-              "type": "string"
-            }
-          ]
-        },
-        {
-          "id": "node-1762233481814-jcbsentno",
-          "definitionId": "output-console",
-          "label": "Console Log",
-          "position": {
-            "x": 872,
-            "y": 160
-          },
-          "inputs": [
-            {
-              "id": "value",
-              "name": "Value",
-              "type": "any"
-            }
-          ],
-          "outputs": []
-        },
-        {
           "id": "node-1762332799373-byu99rrzf",
           "definitionId": "control-foreach",
           "label": "For Each",
@@ -551,29 +457,6 @@
       ],
       "connections": [
         {
-          "id": "conn-1762233468415",
-          "sourceNodeId": "node-1762233441138-y7pa620s5",
-          "sourcePortId": "value",
-          "targetNodeId": "node-1762233465499-okshg8sjr",
-          "targetPortId": "a",
-          "waypoints": []
-        },
-        {
-          "id": "conn-1762233472237",
-          "sourceNodeId": "node-1762233434752-zyg2zfncq",
-          "sourcePortId": "value",
-          "targetNodeId": "node-1762233465499-okshg8sjr",
-          "targetPortId": "b",
-          "waypoints": []
-        },
-        {
-          "id": "conn-1762316636714",
-          "sourceNodeId": "node-1762233465499-okshg8sjr",
-          "sourcePortId": "result",
-          "targetNodeId": "node-1762233481814-jcbsentno",
-          "targetPortId": "value"
-        },
-        {
           "id": "conn-1762337121741",
           "sourceNodeId": "node-1762337118396-88ylh01cs",
           "sourcePortId": "trigger",
@@ -635,7 +518,7 @@
     "repo": "my-project",
     "defaultBranch": "main",
     "activeBranch": "main",
-    "lastSync": "2025-11-05T10:16:26.615Z"
+    "lastSync": "2025-11-05T11:29:44.666Z"
   },
   "currentPageId": "page-1761407980108",
   "customComponents": [
@@ -713,8 +596,8 @@
       ],
       "dataFileId": "collection_1762158479582.json",
       "createdAt": "2025-11-03T08:27:59.582Z",
-      "updatedAt": "2025-11-05T10:16:26.678Z",
-      "recordCount": 0
+      "updatedAt": "2025-11-05T11:30:30.375Z",
+      "recordCount": 1
     }
   ]
 }
