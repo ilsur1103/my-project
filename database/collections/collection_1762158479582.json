@@ -1,22 +1,7 @@
 {
   "collectionId": "collection_1762158479582",
   "version": 1,
-  "records": [
-    {
-      "id": "record_1762275689056_nkwr0zno1",
-      "field_1762158479582_0": "werw",
-      "field_1762158479582_1": "",
-      "field_1762158479582_2": 0,
-      "field_1762270480669_3": ""
-    },
-    {
-      "id": "record_1762275689539_4ikkkd8tt",
-      "field_1762158479582_0": "wer",
-      "field_1762158479582_1": "",
-      "field_1762158479582_2": 0,
-      "field_1762270480669_3": ""
-    }
-  ],
-  "recordCount": 2,
-  "lastModified": "2025-11-04T17:01:34.656Z"
+  "records": [],
+  "recordCount": 0,
+  "lastModified": "2025-11-05T04:17:48.034Z"
 }
