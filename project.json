@@ -2,7 +2,7 @@
   "id": "1",
   "name": "E-commerce Landing",
   "description": "Modern e-commerce landing page",
-  "lastModified": "2025-11-05T07:57:35.880Z",
+  "lastModified": "2025-11-05T08:54:37.455Z",
   "components": [],
   "pages": [
     {
@@ -327,7 +327,7 @@
           "label": "String",
           "position": {
             "x": 80,
-            "y": 300
+            "y": 264
           },
           "inputs": [
             {
@@ -345,7 +345,7 @@
             }
           ],
           "config": {
-            "value": " df sf ps[flsd[f pl"
+            "value": "IlsurAptukov"
           }
         },
         {
@@ -373,8 +373,8 @@
           "definitionId": "string-concat",
           "label": "Concatenate",
           "position": {
-            "x": 440,
-            "y": 184
+            "x": 600,
+            "y": 160
           },
           "inputs": [
             {
@@ -403,8 +403,8 @@
           "definitionId": "output-console",
           "label": "Console Log",
           "position": {
-            "x": 712,
-            "y": 184
+            "x": 872,
+            "y": 160
           },
           "inputs": [
             {
@@ -414,6 +414,50 @@
             }
           ],
           "outputs": []
+        },
+        {
+          "id": "node-1762332799373-byu99rrzf",
+          "definitionId": "control-foreach",
+          "label": "For Each",
+          "position": {
+            "x": 560,
+            "y": 448
+          },
+          "inputs": [
+            {
+              "id": "trigger",
+              "name": "Trigger",
+              "type": "trigger"
+            },
+            {
+              "id": "array",
+              "name": "Array",
+              "type": "array"
+            }
+          ],
+          "outputs": [
+            {
+              "id": "item",
+              "name": "Item",
+              "type": "any"
+            },
+            {
+              "id": "index",
+              "name": "Index",
+              "type": "number"
+            },
+            {
+              "id": "body",
+              "name": "Loop Body",
+              "type": "trigger"
+            },
+            {
+              "id": "done",
+              "name": "Done",
+              "type": "trigger"
+            }
+          ],
+          "unremovable": false
         }
       ],
       "connections": [
@@ -422,14 +466,16 @@
           "sourceNodeId": "node-1762233441138-y7pa620s5",
           "sourcePortId": "value",
           "targetNodeId": "node-1762233465499-okshg8sjr",
-          "targetPortId": "a"
+          "targetPortId": "a",
+          "waypoints": []
         },
         {
           "id": "conn-1762233472237",
           "sourceNodeId": "node-1762233434752-zyg2zfncq",
           "sourcePortId": "value",
           "targetNodeId": "node-1762233465499-okshg8sjr",
-          "targetPortId": "b"
+          "targetPortId": "b",
+          "waypoints": []
         },
         {
           "id": "conn-1762316636714",
@@ -472,7 +518,7 @@
     "repo": "my-project",
     "defaultBranch": "main",
     "activeBranch": "main",
-    "lastSync": "2025-11-05T07:57:17.481Z"
+    "lastSync": "2025-11-05T08:37:19.991Z"
   },
   "currentPageId": "page-1761407980108",
   "customComponents": [
@@ -550,7 +596,7 @@
       ],
       "dataFileId": "collection_1762158479582.json",
       "createdAt": "2025-11-03T08:27:59.582Z",
-      "updatedAt": "2025-11-05T07:57:17.547Z",
+      "updatedAt": "2025-11-05T08:37:20.070Z",
       "recordCount": 0
     }
   ]
