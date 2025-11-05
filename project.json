@@ -2,7 +2,7 @@
   "id": "1",
   "name": "E-commerce Landing",
   "description": "Modern e-commerce landing page",
-  "lastModified": "2025-11-05T10:11:41.736Z",
+  "lastModified": "2025-11-05T10:23:35.594Z",
   "components": [],
   "pages": [
     {
@@ -518,6 +518,35 @@
             "unremovable": true
           },
           "unremovable": true
+        },
+        {
+          "id": "node-1762337876075-m0o03q6yw",
+          "definitionId": "output-console",
+          "label": "Console Log",
+          "position": {
+            "x": 864,
+            "y": 416
+          },
+          "inputs": [
+            {
+              "id": "trigger",
+              "name": "Trigger",
+              "type": "trigger"
+            },
+            {
+              "id": "value",
+              "name": "Value",
+              "type": "any"
+            }
+          ],
+          "outputs": [
+            {
+              "id": "done",
+              "name": "Done",
+              "type": "trigger"
+            }
+          ],
+          "unremovable": false
         }
       ],
       "connections": [
@@ -557,11 +586,25 @@
           "sourcePortId": "rows",
           "targetNodeId": "node-1762332799373-byu99rrzf",
           "targetPortId": "array"
+        },
+        {
+          "id": "conn-1762337880626",
+          "sourceNodeId": "node-1762332799373-byu99rrzf",
+          "sourcePortId": "done",
+          "targetNodeId": "node-1762337876075-m0o03q6yw",
+          "targetPortId": "trigger"
+        },
+        {
+          "id": "conn-1762337886130",
+          "sourceNodeId": "node-1762332799373-byu99rrzf",
+          "sourcePortId": "item",
+          "targetNodeId": "node-1762337876075-m0o03q6yw",
+          "targetPortId": "value"
         }
       ],
       "viewport": {
-        "x": 176,
-        "y": -1.2962748209635038,
+        "x": 77,
+        "y": 56.703725179036496,
         "zoom": 1
       },
       "id": "action-1762233377397"
@@ -592,7 +635,7 @@
     "repo": "my-project",
     "defaultBranch": "main",
     "activeBranch": "main",
-    "lastSync": "2025-11-05T10:00:47.866Z"
+    "lastSync": "2025-11-05T10:16:26.615Z"
   },
   "currentPageId": "page-1761407980108",
   "customComponents": [
@@ -670,7 +713,7 @@
       ],
       "dataFileId": "collection_1762158479582.json",
       "createdAt": "2025-11-03T08:27:59.582Z",
-      "updatedAt": "2025-11-05T10:04:03.526Z",
+      "updatedAt": "2025-11-05T10:16:26.678Z",
       "recordCount": 0
     }
   ]
