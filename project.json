@@ -2,7 +2,7 @@
   "id": "1",
   "name": "E-commerce Landing",
   "description": "Modern e-commerce landing page",
-  "lastModified": "2025-11-05T10:05:43.165Z",
+  "lastModified": "2025-11-05T10:11:41.736Z",
   "components": [],
   "pages": [
     {
@@ -186,8 +186,8 @@
             "y": 364.27
           },
           "size": {
-            "width": 401.94,
-            "height": 216
+            "width": "auto",
+            "height": "auto"
           },
           "positionType": "relative",
           "layout": "flex",
@@ -420,8 +420,8 @@
           "definitionId": "control-foreach",
           "label": "For Each",
           "position": {
-            "x": 560,
-            "y": 448
+            "x": 568,
+            "y": 424
           },
           "inputs": [
             {
@@ -458,6 +458,66 @@
             }
           ],
           "unremovable": false
+        },
+        {
+          "id": "node-1762337112825-jcmfcavjb",
+          "definitionId": "collection-get-data",
+          "label": "Get Collection Data",
+          "position": {
+            "x": 248,
+            "y": 552
+          },
+          "inputs": [],
+          "outputs": [
+            {
+              "id": "headers",
+              "name": "Headers",
+              "type": "array"
+            },
+            {
+              "id": "columns",
+              "name": "Columns",
+              "type": "array"
+            },
+            {
+              "id": "rows",
+              "name": "Rows",
+              "type": "array"
+            },
+            {
+              "id": "collection",
+              "name": "Collection",
+              "type": "object"
+            }
+          ],
+          "config": {
+            "collectionId": "",
+            "selectedColumns": [],
+            "rowsStart": 0,
+            "rowsEnd": -1
+          },
+          "unremovable": false
+        },
+        {
+          "id": "node-1762337118396-88ylh01cs",
+          "definitionId": "event-start",
+          "label": "Start",
+          "position": {
+            "x": -96,
+            "y": 424
+          },
+          "inputs": [],
+          "outputs": [
+            {
+              "id": "trigger",
+              "name": "Start",
+              "type": "trigger"
+            }
+          ],
+          "config": {
+            "unremovable": true
+          },
+          "unremovable": true
         }
       ],
       "connections": [
@@ -483,12 +543,26 @@
           "sourcePortId": "result",
           "targetNodeId": "node-1762233481814-jcbsentno",
           "targetPortId": "value"
+        },
+        {
+          "id": "conn-1762337121741",
+          "sourceNodeId": "node-1762337118396-88ylh01cs",
+          "sourcePortId": "trigger",
+          "targetNodeId": "node-1762332799373-byu99rrzf",
+          "targetPortId": "trigger"
+        },
+        {
+          "id": "conn-1762337129420",
+          "sourceNodeId": "node-1762337112825-jcmfcavjb",
+          "sourcePortId": "rows",
+          "targetNodeId": "node-1762332799373-byu99rrzf",
+          "targetPortId": "array"
         }
       ],
       "viewport": {
-        "zoom": 1,
-        "x": 175,
-        "y": 194.7037251790365
+        "x": 176,
+        "y": -1.2962748209635038,
+        "zoom": 1
       },
       "id": "action-1762233377397"
     }
@@ -596,7 +670,7 @@
       ],
       "dataFileId": "collection_1762158479582.json",
       "createdAt": "2025-11-03T08:27:59.582Z",
-      "updatedAt": "2025-11-05T10:00:47.931Z",
+      "updatedAt": "2025-11-05T10:04:03.526Z",
       "recordCount": 0
     }
   ]
