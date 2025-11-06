@@ -2,7 +2,7 @@
   "id": "1",
   "name": "E-commerce Landing",
   "description": "Modern e-commerce landing page",
-  "lastModified": "2025-11-05T11:49:49.822Z",
+  "lastModified": "2025-11-06T16:01:59.039Z",
   "components": [],
   "pages": [
     {
@@ -252,7 +252,19 @@
         "flexDirection": "column",
         "fontFamily": "Inter, sans-serif",
         "display": "flex",
-        "gap": "16px"
+        "gap": "16px",
+        "maxWidth": "800px",
+        "overflow": "auto",
+        "margin": "auto"
+      },
+      "layoutGrid": {
+        "enabled": true,
+        "columnCount": 12,
+        "columnWidth": "auto",
+        "gap": 20,
+        "margin": 200,
+        "color": "#FF00FF",
+        "opacity": 0.4
       }
     },
     {
@@ -518,7 +530,7 @@
     "repo": "my-project",
     "defaultBranch": "main",
     "activeBranch": "main",
-    "lastSync": "2025-11-05T11:49:20.686Z"
+    "lastSync": "2025-11-06T16:00:38.413Z"
   },
   "currentPageId": "page-1761407980108",
   "customComponents": [
@@ -596,7 +608,7 @@
       ],
       "dataFileId": "collection_1762158479582.json",
       "createdAt": "2025-11-03T08:27:59.582Z",
-      "updatedAt": "2025-11-05T11:49:20.761Z",
+      "updatedAt": "2025-11-06T16:00:38.488Z",
       "recordCount": 0
     }
   ]
